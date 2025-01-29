@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="manifest" href="/manifest.json" />
+	<meta name="theme-color" content="#151515" />
+  <title>2048 Undo | Play 2048 Undo Game</title>
+  <meta name="description" content="Discover the benefits of 2048 Undo, a feature that allows players to correct mistakes and improve their strategy in the classic number puzzle game">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <script>
+    if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+    .then(registration => {console.log('Service Worker registered successfully:', registration);})
+    .catch(error => {console.log('Error in Service Worker registration:', error);});});}
+    </script>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro"><strong>UNDO</strong> Enabled ;) Have Fun!</p>
+      <a class="restart-button">New Game (r)</a>
+      <a class="restart-button undo-button disabled">Undo (u)</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+ 
+    <hr>
+    <div class="block block-728"><script type="text/javascript">
+     atOptions = {
+       'key' : 'd1d26e15f7c349fd8e403bb5ea491a31',
+       'format' : 'iframe',
+       'height' : 90,
+       'width' : 728,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/d1d26e15f7c349fd8e403bb5ea491a31/invoke.js"></script></div>
+       <div class="block block-300"><script type="text/javascript">
+     atOptions = {
+       'key' : '0fee57062f9bb330edc13a4e4349876d',
+       'format' : 'iframe',
+       'height' : 250,
+       'width' : 300,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/0fee57062f9bb330edc13a4e4349876d/invoke.js"></script></div>
+   
+       <hr>
+    <p>The game <strong>2048</strong> is a well-known number puzzle that challenges players to merge tiles and reach the coveted 2048 tile. However, one wrong move can ruin a well-planned strategy. This is where the <strong>Undo</strong> feature comes into play. It allows players to reverse their last move and improve their chances of winning.</p>
+    
+    <h2>What Is 2048 Undo?</h2>
+    <p>The <strong>Undo</strong> feature in 2048 lets players take back their most recent move. This can be useful when an unintended swipe causes unwanted tile placement, making the game more forgiving and strategic.</p>
+    
+    <h2>How Does 2048 Undo Work?</h2>
+    <p>When a player makes a move in 2048, the game records the board's previous state. By pressing the Undo button, they can restore the board to that previous position, effectively erasing the mistake.</p>
+    
+    <h2>Advantages of Using 2048 Undo</h2>
+    <ul>
+        <li><strong>Error Correction:</strong> Undo helps fix accidental swipes that may disrupt tile alignment.</li>
+        <li><strong>Better Strategy:</strong> Players can test different moves and revert if they find a better alternative.</li>
+        <li><strong>Higher Scores:</strong> Avoiding mistakes and optimizing tile merges can lead to higher scores.</li>
+        <li><strong>Longer Gameplay:</strong> Undo prevents early losses, allowing extended play sessions.</li>
+    </ul>
+    
+    <h2>When to Use the Undo Feature</h2>
+    <p>While Undo is a useful tool, over-reliance on it can reduce the challenge of the game. Here are some ideal situations to use it:</p>
+    <ul>
+        <li>When a move splits important tiles and disrupts progress.</li>
+        <li>After an accidental swipe in the wrong direction.</li>
+        <li>If a move creates an unfavorable tile arrangement.</li>
+    </ul>
+    
+    <h2>Does Every 2048 Version Have Undo?</h2>
+    <p>Not all versions of 2048 come with an Undo option. The classic version does not include this feature, but many modified versions and apps provide Undo as an enhancement.</p>
+    
+    <h2>Final Thoughts</h2>
+    <p>The Undo feature in 2048 is a great way to refine strategies, achieve higher scores, and enjoy a more controlled gameplay experience. While it should not replace careful planning, it provides a useful safety net for players aiming to master the game.</p>
+
+       <hr>
+    <p>
+    <strong class="important">Note:</strong> This is the <strong>modded</strong> version of 2048 that includes unlimited <strong>UNDO,</strong> which stores locally i.e. stays even if you refresh the webpage and it saves only <strong>VALID</strong> moves. You can play it on your phone via <a href="https://kaloodinaz.github.io/2048-undo/">2048 Undo</a></p>
+    <hr>
+    <p>
+    Created by <a href="https://kaloodinaz.github.io/" target="_blank">Kaloo Dinaz</a>
+    </p>
+  </div>
+
+  <script defer src="js/bind_polyfill.js"></script>
+  <script defer src="js/classlist_polyfill.js"></script>
+  <script defer src="js/animframe_polyfill.js"></script>
+  <script defer src="js/keyboard_input_manager.js"></script>
+  <script defer src="js/html_actuator.js"></script>
+  <script defer src="js/grid.js"></script>
+  <script defer src="js/tile.js"></script>
+  <script defer src="js/local_storage_manager.js"></script>
+  <script defer src="js/game_manager.js"></script>
+  <script defer src="js/application.js"></script>
+</body>
+</html>
